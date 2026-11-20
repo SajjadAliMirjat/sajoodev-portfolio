@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+body { @apply bg-slate-50 font-sans text-slate-700 antialiased dark:bg-[#0a0b10] dark:text-slate-300; }
+h1, h2, h3, h4 { @apply font-display text-slate-900 dark:text-white; }
+@layer components {
+  .wrap { @apply mx-auto w-full max-w-6xl px-5 sm:px-8; }
+  .section { @apply py-20 sm:py-28; }
+  .card { @apply rounded-2xl border border-slate-200 bg-white shadow-sm transition duration-300 dark:border-white/10 dark:bg-white/[0.03] dark:shadow-none; }
+  .card-hover { @apply hover:-translate-y-1 hover:border-accent/50 hover:shadow-xl hover:shadow-accent/10; }
+  .muted { @apply text-slate-600 dark:text-slate-400; }
+  .badge { @apply rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-xs font-medium text-slate-700 dark:border-white/10 dark:bg-white/5 dark:text-slate-300; }
+  .input { @apply w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-sm text-slate-900 outline-none transition placeholder:text-slate-400 focus:border-accent focus:ring-2 focus:ring-accent/30 dark:border-white/10 dark:bg-white/5 dark:text-white; }
+}
+:focus-visible { outline: 2px solid #4f7cff; outline-offset: 2px; }
