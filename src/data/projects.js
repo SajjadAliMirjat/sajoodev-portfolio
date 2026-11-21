@@ -3,14 +3,14 @@
 // Leave liveUrl / githubUrl empty ("") and the button is shown as unavailable.
 const projects = [
   {
-    id: 1,
-    title: 'Admin Dashboard',
-    description: 'A modern responsive dashboard with API integration, data tables and filtering.',
-    image: '/images/projects/admin-dashboard.png',
-    technologies: ['React', 'Tailwind CSS', 'Context API'],
+    id: 2,
+    title: 'TaskFlow Dashboard',
+    description: 'A modern task management dashboard with project analytics, task tracking and a responsive UI.',
+    image: '/images/projects/taskflow.png',
+    technologies: ['React', 'Tailwind CSS', 'Context API', 'Recharts'],
     category: 'Dashboard',
-    liveUrl: '',
-    githubUrl: '',
+    liveUrl: 'https://taskflow-dashboard-virid.vercel.app/',
+    githubUrl: 'https://github.com/SajjadAliMirjat/taskflow-dashboard',
     featured: true,
     sample: true,
   },
