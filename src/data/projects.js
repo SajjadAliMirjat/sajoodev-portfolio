@@ -33,17 +33,19 @@ const projects = [
   featured: true,
   sample: false,
 },
-  {
-    id: 3,
-    title: 'Expense Management App',
-    description: 'Track income and expenses with category filters and a clear monthly summary.',
-    image: '/images/projects/expense-manager.png',
-    technologies: ['React', 'Tailwind CSS', 'localStorage'],
-    category: 'Web App',
-    liveUrl: '',
-    githubUrl: '',
-    featured: false,
-    sample: true,
-  },
+  
+{
+  id: 3,
+  title: 'Expense Management App',
+  description: 'A responsive expense management application to track income and expenses, manage transactions, filter records by category, and view monthly financial summaries.',
+  image: '/images/projects/expense-manager.png',
+  technologies: ['React', 'Tailwind CSS', 'Context API', 'localStorage'],
+  category: 'Web App',
+  liveUrl: 'https://expense-management-app-gray-omega.vercel.app',
+  githubUrl: 'https://github.com/SajjadAliMirjat/expense-management-app',
+  featured: true,
+  sample: true,
+},
+
 ]
 export default projects
